@@ -13,3 +13,4 @@ parserOptions:
   ecmaVersion: 2018
 rules:
   no-trailing-spaces: "error"
+  react/version: "detect"
