@@ -31,6 +31,8 @@ jobs:
           node-version: "18"
       - name: Install dependencies
         run: npm clean-install
+      - name: Create reports directory
+        run: mkdir -p reports
       - name: Run unit tests
         run: npm run test-unit
       - if: success() || failure()
