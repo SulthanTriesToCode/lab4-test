@@ -35,6 +35,8 @@ jobs:
         run: mkdir -p reports
       - name: Run unit tests
         run: npm run test-unit
+      - name: List reports directory contents
+        run: ls -l reports
       - if: success() || failure()
         uses: actions/upload-artifact@v3
         with:
