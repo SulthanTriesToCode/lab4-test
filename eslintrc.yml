@@ -1,8 +1,8 @@
 env:
-node: true
-commonjs: true
-es6: true
-jest: true
+  node: true
+  commonjs: true
+  es6: true
+  jest: true
 extends:
   - eslint:recommended
   - plugin:react/recommended
@@ -14,3 +14,6 @@ parserOptions:
 rules:
   no-trailing-spaces: "error"
   react/version: "detect"
+settings:
+  react:
+    version: "detect"
